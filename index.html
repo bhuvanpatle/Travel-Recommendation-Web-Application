@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelBloom - Discover Your Perfect Destination</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-compass"></i>
+                <span>TravelBloom</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact Us</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Explore the World with TravelBloom</h1>
+            <p>Discover breathtaking destinations, immerse yourself in rich cultures, and create unforgettable memories. Your perfect adventure awaits!</p>
+            
+            <!-- Search Bar -->
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search for beaches, temples, countries...">
+                <button id="searchBtn" class="btn-search">
+                    <i class="fas fa-search"></i> Search
+                </button>
+                <button id="clearBtn" class="btn-clear">
+                    <i class="fas fa-times"></i> Clear
+                </button>
+            </div>
+
+            <button class="btn-book">Book Now</button>
+            
+            <!-- Social Media Links -->
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Results Section -->
+    <section class="search-results" id="searchResults">
+        <div class="container">
+            <h2 id="resultsTitle">Search Results</h2>
+            <div id="resultsContainer" class="results-grid">
+                <!-- Search results will be dynamically inserted here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="introduction">
+        <div class="container">
+            <h2>Welcome to TravelBloom</h2>
+            <p>Your gateway to extraordinary travel experiences. We curate the world's most beautiful destinations, from pristine beaches to ancient temples, helping you discover places that match your wanderlust. Whether you're seeking adventure, relaxation, or cultural immersion, TravelBloom connects you with your perfect destination.</p>
+        </div>
+    </section>
+
+    <!-- Featured Destinations -->
+    <section class="featured-destinations">
+        <div class="container">
+            <h2>Featured Destinations</h2>
+            <div class="destinations-grid">
+                <div class="destination-card">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Tropical Beach">
+                    <div class="card-content">
+                        <h3>Tropical Beaches</h3>
+                        <p>Discover paradise with crystal-clear waters and white sandy beaches.</p>
+                        <button class="btn-explore" onclick="searchRecommendations('beaches')">Explore Beaches</button>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Ancient Temples">
+                    <div class="card-content">
+                        <h3>Sacred Temples</h3>
+                        <p>Explore ancient temples and immerse yourself in spiritual heritage.</p>
+                        <button class="btn-explore" onclick="searchRecommendations('temples')">Explore Temples</button>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <img src="https://images.unsplash.com/photo-1493738783064-4d0f16bc5a88?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="City Skyline">
+                    <div class="card-content">
+                        <h3>World Cities</h3>
+                        <p>Experience vibrant cultures and iconic landmarks in major cities.</p>
+                        <button class="btn-explore" onclick="searchRecommendations('countries')">Explore Cities</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-compass"></i> TravelBloom</h3>
+                    <p>Discover the world's most beautiful destinations with personalized recommendations.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TravelBloom. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
