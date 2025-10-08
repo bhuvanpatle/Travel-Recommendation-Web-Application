@@ -86,7 +86,7 @@ Welcome to **TravelBloom**, your ultimate travel companion for discovering extra
 5. **Notification System**: User feedback and status updates
 6. **Booking Integration**: Simulated booking workflow
 
-## 📊 Grading Criteria Fulfillment
+<!-- ## 📊 Grading Criteria Fulfillment
 
 | Criteria                              | Points | Status | Implementation                          |
 | ------------------------------------- | ------ | ------ | --------------------------------------- |
@@ -99,7 +99,7 @@ Welcome to **TravelBloom**, your ultimate travel companion for discovering extra
 | 7. Beach Recommendations (2 images)   | 2      | ✅     | 3 beaches with multiple images each     |
 | 8. Temple Recommendations (2 images)  | 2      | ✅     | 3 temples with multiple images each     |
 | 9. Country Recommendations (2 images) | 2      | ✅     | 3 cities with multiple images each      |
-| **Total**                             | **20** | **✅** | **All criteria met and exceeded**       |
+| **Total**                             | **20** | **✅** | **All criteria met and exceeded**       | -->
 
 ## 🌍 Destination Categories
 
